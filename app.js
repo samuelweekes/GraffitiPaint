@@ -17,7 +17,8 @@ var commentRoutes    = require("./routes/comments"),
     indexRoutes      = require("./routes/index");
 
 
-mongoose.connect("mongodb://localhost/yelp_camp");
+//("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb://Samuel:Fcf9zgpt@ds115198.mlab.com:15198/bearlyblogging");
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(methodOverride("_method"));
 app.use(flash());
