@@ -5,27 +5,27 @@
         <h1>BearlyBlogging</h1>
         <p>Brown Eyed Bear Blogs</p>
         <p>
-             <a class= "btn btn-primary btn btn-lg" href="/campgrounds/new">Add New Blog</a> 
+             <a class= "btn btn-primary btn btn-lg" href="/paints/new">Add New Blog</a>
         </p>
       </div>
     </header>
-    
+
     <div class="row text-center" style="display:flex; flex-wrap: wrap;">
-        <% campgrounds.forEach(function(campground) { %>
+        <% paints.forEach(function(paint) { %>
         <div class="col-md-3 col-sm-6">
             <div class="thumbnail">
-                <img src="<%= campground.image %>">
+                <img src="<%= paint.image %>">
                 <div class="caption">
-                    <h4><%= campground.name %></h4>
+                    <h4><%= paint.name %></h4>
                 </div>
             </div>
             <p>
-                <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">Read Blog</a>
+                <a href="/paints/<%= paint._id %>" class="btn btn-primary">Read Blog</a>
             </p>
         </div>
     <% });%>
         </div>
     </div>
-    
-    
+
+
     <%include ../partials/footer%>
